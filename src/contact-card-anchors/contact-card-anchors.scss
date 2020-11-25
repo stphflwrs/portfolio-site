@@ -1,0 +1,31 @@
+@import 'styles/vars/colors';
+@import 'styles/vars/responsiveness';
+
+.contact-card-anchors--wrapper {
+  margin-top: 16px;
+}
+
+.contact-card-anchors {
+
+}
+
+.contact-card-anchors--anchor {
+  height: calc(1em + 24px);
+  padding: 12px 16px;
+
+  &:hover {
+    background: #D64045;
+    cursor: pointer;
+  }
+
+  +.contact-card-anchors--anchor {
+    @media (min-width: $breakpoint-large) {
+      margin-top: 8px;
+    }
+  }
+
+  .anchor--label {
+    font-size: 1em;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,13 @@
+@import 'styles/vars/responsiveness';
+
+.content-section-divider {
+  border-bottom: 1px solid grey;
+  height: 1px;
+  width: 100%;
+
+  @media (min-width: $breakpoint-large) {
+    border-bottom: none;
+    //border-bottom-color: #703d57;
+    margin: 32px 0;
+  }
+}

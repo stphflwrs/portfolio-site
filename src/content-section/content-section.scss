@@ -1,0 +1,27 @@
+@import 'styles/vars/colors';
+@import 'styles/vars/responsiveness';
+
+.content-section--wrapper {
+  background: $text-bg;
+  padding: 32px 0;
+}
+
+.content-section {
+  margin: 0 auto;
+  width: $content-width-mobile;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: $content-width-tablet;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 90%;
+  }
+}
+
+.content-section--title {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin-bottom: 16px;
+  margin-top: 0;
+}

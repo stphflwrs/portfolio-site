@@ -1,0 +1,40 @@
+@import 'styles/vars/colors';
+@import 'styles/vars/responsiveness';
+
+.app--wrapper {
+  background: $secondary;
+
+  @media (min-width:$breakpoint-large) {
+    height: 100vh;
+  }
+}
+
+.app {
+  @media (min-width: $breakpoint-large) {
+    align-items: stretch;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 10vh 0;
+    width: $content-width-large;
+  }
+
+  @media (min-width: $breakpoint-xlarge) {
+    width: $content-width-xlarge;
+  }
+}
+
+.app--contact-card {
+  @media (min-width: $breakpoint-large) {
+    flex: 1;
+  }
+}
+
+.app--content-sections {
+  @media (min-width: $breakpoint-large) {
+    flex: 2;
+    margin-left: 32px;
+    overflow-y: scroll;
+  }
+}
